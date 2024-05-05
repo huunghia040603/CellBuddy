@@ -1,0 +1,52 @@
+.hover:hover
+{
+ transform: scale(1.1);}
+
+/* Code animation */@keyframes example {  0% {background-color: crimson;}  25% {background-color: lightsalmon;}  50% {background-color: pink;}  100% {background-color: indigo;}}
+.hover {
+background-color: purple;
+animation-name: example,zoom;
+animation-duration: 2s ;
+animation-iteration-count:infinite;}
+
+
+.zoom {
+
+   transition: transform 2s;
+
+ }
+ /*Hiệu ứng zoom*/
+ .zoom:hover {
+   transform: scale(1.2);
+ }
+
+
+@keyframes zoom {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+
+@keyframes zoom1 {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+
+
+
+
